@@ -6,20 +6,22 @@ int main(){
     int z1, z2;
 
     printf("Enter nbr: ");
-    scanf("");
+    scanf("%d", &x1);
 
     printf("Enter nbr: ");
-    scanf("");
+    scanf("%d", &x2);
 
     printf("Enter nbr: ");
-    scanf("");
+    scanf("%d", &y1);
 
     printf("Enter nbr: ");
-    scanf("");
+    scanf("%d", &y2);
 
     printf("Enter nbr: ");
-    scanf("");
+    scanf("%d", &z1);
 
     printf("Enter nbr: ");
-    scanf("");
+    scanf("%d", &z2);
+
+    
 }
