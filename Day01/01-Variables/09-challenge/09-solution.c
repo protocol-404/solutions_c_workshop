@@ -27,9 +27,9 @@ int main() {
     int sub1, sub2, sub3;
     float distance;
 
-    sub1 = x1 - x2;
-    sub2 = y1 - y2;
-    sub3 = z1 - z2;
+    sub1 = x2 - x1;
+    sub2 = y2 - y1;
+    sub3 = z2 - z1;
 
     distance = sqrt(pow(sub1, 2) + pow(sub2, 2) + pow(sub3, 2));
 
