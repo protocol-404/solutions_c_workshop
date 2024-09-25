@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(){
+int main() {
     int x, y, z;
 
     printf("Enter 1st number: ");
@@ -21,7 +21,9 @@ int main(){
 
     result = pow(mul, power);
 
-    printf("Geometric mean = %f\n", result);
+    printf("\n=====================================\n");
+    printf("Geometric Mean = %.2f\n", result);
+    printf("=====================================\n");
 
     return 0;
 }

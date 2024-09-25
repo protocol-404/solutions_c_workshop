@@ -1,16 +1,18 @@
 #include <stdio.h>
 
-int main(){
+int main() {
     float x;
 
-    printf("Enter ur temperator");
+    printf("Enter your temperature in C: ");
     scanf("%f", &x);
 
     if (x < 0) {
-        printf("the watter is Solide");
+        printf("The water is solid.\n");
     } else if (x > 100) {
-        printf("the watter is Gaz");
+        printf("The water is gas.\n");
     } else {
-        printf("the watter is Liquide");
+        printf("The water is liquid.\n");
     }
+
+    return 0;
 }

@@ -1,22 +1,29 @@
 #include <stdio.h>
 
 int main() {
-    int a,b,c;
+    int x, y, z;
 
-    printf("Enter the first nbr: ");
-    scanf("%d", &a);
-    printf("Enter the second nbr: ");
-    scanf("%d", &b);
-    printf("Enter the theerd nbr: ");
-    scanf("%d", &c);
+    printf("Enter the first number: ");
+    scanf("%d", &x);
+    printf("Enter the second number: ");
+    scanf("%d", &y);
+    printf("Enter the third number: ");
+    scanf("%d", &z);
 
-    int sum1 = (a * 2.0);
-    int sum2 = (b * 3.0);
-    int sum3 = (c * 5.0);
+    float sum1, sum2, sum3;
 
-    int sum = sum1 + sum2 + sum3;
+    sum1 = (x * 2.0);
+    sum2 = (y * 3.0);
+    sum3 = (z * 5.0);
 
-    printf("The average of three nbrs is: %d", sum);
+    float sum, average;
+
+    sum = sum1 + sum2 + sum3;
+    average = sum / 10.0;
+
+    printf("\n=====================================\n");
+    printf("The average of the three numbers is: %.2f\n", average);
+    printf("=====================================\n");
 
     return 0;
 }

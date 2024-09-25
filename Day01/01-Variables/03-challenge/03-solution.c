@@ -1,17 +1,17 @@
 #include <stdio.h>
 
-int main(){
-
+int main() {
     float y;
 
-    y = 273.15;
-
-    printf("Enter ur distence on km: ");
+    printf("Enter your distance in kilometers: ");
     scanf("%f", &y);
 
     float converter;
-
     converter = y * 1093.61;
 
-    printf("%f\n", converter);
+    printf("\n=====================================\n");
+    printf("Distance in yards: %.2f yd\n", converter);
+    printf("=====================================\n");
+
+    return 0;
 }
