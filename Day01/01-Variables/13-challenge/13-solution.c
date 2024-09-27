@@ -1,14 +1,26 @@
-// #include <stdio.h>
+#include <stdio.h>
 
-// void binary(int nbr) {
+int main() {
+    int binaryNum[32];
+    int num;
+    
+    printf("Enter an integer: ");
+    scanf("%d", &num);
 
-// }
+    printf("Hexadecimal: %X\n", num);
+    printf("Binary: ");
+    
+    int n = num;
+    int i = 0;
+    while (n > 0) {
+        binaryNum[i] = n % 2;
+        n = n / 2;
+        i++;
+    }
+    for (int j = i - 1; j >= 0; j--)
+        printf("%d", binaryNum[j]);
+    
+    printf("\n");
 
-// int main() {
-//     int nbr;
-
-//     printf("Entrez un nombre entier: ");
-//     scanf("%d", &nbr);
-
-//     return 0;
-// }
+    return 0;
+}
