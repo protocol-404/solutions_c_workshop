@@ -1,20 +1,23 @@
 #include <stdio.h>
 
 int main() {
-    int tab[5];
-    int nbr;
+    int tab[80];
+    int nbr, i, sum;
 
     printf("enter nbr of elements: ");
     scanf("%d", &nbr);
 
-    for (int i = 0; i < nbr; i++) {
+    for (i = 0; i < nbr; i++) {
         printf("enter element %d: ", i);
         scanf("%d", &tab[i]);
     }
 
-    for (int i = 0; i < nbr; i++) {
-        printf("%d\n", tab[i]);
+    sum = 0;
+    for (i = 0; i < nbr; i++) {
+        sum = sum + tab[i];
     }
+
+    printf("average: %.2f\n", (float)sum / nbr);
 
     return 0;
 }

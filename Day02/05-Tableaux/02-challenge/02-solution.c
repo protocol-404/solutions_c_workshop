@@ -15,6 +15,5 @@ int main() {
     for (int i = 0; i < nbr; i++) {
         printf("%d\n", tab[i]);
     }
-
     return 0;
 }

@@ -3,6 +3,7 @@
 int main() {
     int tab[5];
     int nbr;
+    int min = 1000;
 
     printf("enter nbr of elements: ");
     scanf("%d", &nbr);
@@ -13,8 +14,11 @@ int main() {
     }
 
     for (int i = 0; i < nbr; i++) {
-        printf("%d\n", tab[i]);
+        if (tab[i] < min) {
+            min = tab[i];
+        }
     }
 
+    printf("min is %d\n", min);
     return 0;
 }
