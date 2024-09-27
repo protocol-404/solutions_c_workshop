@@ -8,12 +8,13 @@ int main() {
 
     printf("enter an power: ");
     scanf("%d", &power);
+    
+    int result = 1;
 
     for (int i = 1; i <= power; i++) {
         result *= base;
     }
 
-    int result = 1;
 
     printf("result is %d\n", result);
     return 0;
